@@ -3,7 +3,7 @@ describe("When user visits application", () => {
     cy.visit("/");
   });
 
-  it("is expected to render a hello world", () => {
-    cy.get("body").should("contain.text", "Hello world");
+  it("is expected to display a canvas", () => {
+    cy.get("[data-cy=game-canvas]").should('be.visible')
   });
 });
