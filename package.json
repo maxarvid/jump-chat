@@ -8,7 +8,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "cy:open": "cypress open --e2e -b chrome",
-    "cypress": "start-test vite 5173 cy:open"
+    "cy:run": "cypress run",
+    "cypress": "start-test vite 5173 cy:open",
+    "cypress:ci": "start-test vite 5173 cy:run"
   },
   "dependencies": {
     "vue": "^3.2.37"
