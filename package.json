@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "cy:open": "cypress open --e2e -b chrome",
+    "cypress": "start-test vite 5173 cy:open"
   },
   "dependencies": {
     "vue": "^3.2.37"
